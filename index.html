@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="rbcss.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RBAC Admin Dashboard</h1>
+        </header>
+
+        <!-- Add User Section -->
+        <section class="form-section">
+            <h2>Add User</h2>
+            <div class="form-group">
+                <input type="text" id="user-name" placeholder="Enter user name">
+                <select id="user-role">
+                    <option value="" disabled selected>Select Role</option>
+                </select>
+                <button id="add-user" class="btn primary">Add User</button>
+            </div>
+        </section>
+
+        <!-- Add Role Section -->
+        <section class="form-section">
+            <h2>Add Role</h2>
+            <div class="form-group">
+                <input type="text" id="role-name" placeholder="Enter role name">
+                <button id="add-role" class="btn primary">Add Role</button>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="search-section">
+            <input type="text" id="search" placeholder="Search Users or Roles">
+        </section>
+
+        <!-- User Table -->
+        <section class="table-section">
+            <h2>User Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list"></tbody>
+            </table>
+        </section>
+
+        <!-- Role Table -->
+        <section class="table-section">
+            <h2>Role Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Role Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="role-list"></tbody>
+            </table>
+        </section>
+
+        <!-- Alert Section -->
+        <div id="alert"></div>
+    </div>
+    <footer>
+        <p> by @Saurabh</p>
+    </footer>
+
+
+    <script src="rbjava.js"></script>
+</body>
+</html>
