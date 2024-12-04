@@ -154,3 +154,51 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+
+/* Add background image to the body */
+body {
+    background-image: url('your-image-path.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional font styling */
+    color: #fff; /* Ensures text is readable on dark backgrounds */
+}
+
+/* Add a transparent effect to the container */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Additional styling for tables and forms */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    color: #000; /* Black text for tables */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ddd;
+}
+
